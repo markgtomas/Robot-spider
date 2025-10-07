@@ -1,0 +1,18 @@
+// library for servo use
+#include <Servo.h> 
+
+Servo legServo; // create a servo object
+// legServo can be considered a variable here
+
+void setup() {
+  // you do not need to set pinMode for servos
+  legServo.attach(pinNumber);  // attach servo signal pin to digital pin of any number (OUTPUT is automatic)
+  // the variable legServo is used to reference this pin from now on
+}
+
+void loop() {
+  legServo.write(0);    // move to 0 degrees
+  delay(2000);
+  legServo.write(180);  // move to 180 degrees
+  delay(2000);
+}
