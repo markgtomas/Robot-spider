@@ -1,10 +1,13 @@
 //include libraries
 #include <Servo.h>
 
-Servo servo[8][3];
+#define LEGS 8
+#define JOINTS 3
+
+Servo servo[LEGS][JOINTS];
 
 // placeholder pins
-int PIN[8][3] = { // get someone to figure out the pin numbers for the I^2c extention
+int PIN[LEGS][JOINTS] = { // get someone to figure out the pin numbers for the I^2c extention
   // leg0: front-left
   {0, 1, 2}, 
   // leg1: front-right
