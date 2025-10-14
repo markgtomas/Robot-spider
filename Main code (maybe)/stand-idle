@@ -1,3 +1,5 @@
+//might need to change based on the left/right side of the robot
+
 void idle(){
   for (int leg = 0; leg < LEGS; leg++){
     for(int joint = 0; joint < JOINTS; joint++){
