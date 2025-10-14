@@ -1,0 +1,19 @@
+void idle(){
+  for (int leg = 0; leg < LEGS; leg++){
+    for(int joint = 0; joint < JOINTS; joint){
+      switch (joint) {
+        case 0:
+          // hip joint position
+          break;
+        case 1:
+          // knee joint position
+          break;
+        case 2:
+          // foot/ankle joint position
+          break;
+        default:
+          // just in case JOINTS > 3
+          break;
+      }
+  } 
+}
